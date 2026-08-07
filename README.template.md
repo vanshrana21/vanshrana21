@@ -36,7 +36,7 @@ Gmail instead of sitting in a slide deck.
 AI phishing detector that scans mail *in place* via a browser extension for Gmail and
 WhatsApp — flagging messages as you read them, not after you've already clicked.
 
-`Python` `Chrome Extension` `ML`
+[`→ source`](https://github.com/vanshrana21/kavach) · `Python` `FastAPI` `Chrome Extension`
 
 </td><td width="33%" valign="top">
 
