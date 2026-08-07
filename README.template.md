@@ -21,7 +21,7 @@ Gmail instead of sitting in a slide deck.
 - 🔭 Currently building **Juris AI** and **ScopeGuard**
 - 🌱 Learning my way around Docker, GitHub Actions, and Luau
 - 💬 Ask me about FastAPI, Bun, Roblox systems design, or backtesting Indian equities
-- 📫 **vanshrana2137@gmail.com** · [LinkedIn](https://linkedin.com/in/vanshrana) · [X](https://twitter.com/vansh_rana)
+- 📫 **vanshrana2137@gmail.com** · [LinkedIn](https://www.linkedin.com/in/vansh-rana-bb29a0385/)
 
 ---
 

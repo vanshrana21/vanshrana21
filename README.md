@@ -21,7 +21,7 @@ Gmail instead of sitting in a slide deck.
 - 🔭 Currently building **Juris AI** and **ScopeGuard**
 - 🌱 Learning my way around Docker, GitHub Actions, and Luau
 - 💬 Ask me about FastAPI, Bun, Roblox systems design, or backtesting Indian equities
-- 📫 **vanshrana2137@gmail.com** · [LinkedIn](https://linkedin.com/in/vanshrana) · [X](https://twitter.com/vansh_rana)
+- 📫 **vanshrana2137@gmail.com** · [LinkedIn](https://www.linkedin.com/in/vansh-rana-bb29a0385/)
 
 ---
 
@@ -143,8 +143,8 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**565** contributions in the last year  
-📦 &nbsp;**558** commits · **1** PRs · **0** issues  
+🔥 &nbsp;**569** contributions in the last year  
+📦 &nbsp;**562** commits · **1** PRs · **0** issues  
 📁 &nbsp;**6** public repos · ⭐ **1** stars earned  
 👥 &nbsp;**2** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
@@ -185,5 +185,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **7 Aug 2026, 9:22 pm IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **7 Aug 2026 at 11:10 PM IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
