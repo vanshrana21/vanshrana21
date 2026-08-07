@@ -143,20 +143,11 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**563** contributions in the last year  
-📦 &nbsp;**556** commits · **1** PRs · **0** issues  
-📁 &nbsp;**6** public repos · ⭐ **1** stars earned  
-👥 &nbsp;**2** followers · **2** following  
-🗓️ &nbsp;On GitHub since **May 2025**
+{{STATS}}
 
 ### Everything that's public
 
-| Repo | What it is | Built with | Last pushed |
-|---|---|---|---|
-| **[Ieee](https://github.com/vanshrana21/Ieee)** ⭐ 1 | Juris AI — AI study platform for law students: courtroom simulation, answer-writing practice with automated scoring, and institution dashboards | `Python` `JavaScript` `CSS` `HTML` `Shell` | today |
-| **[Finguru](https://github.com/vanshrana21/Finguru)** | Finance-literacy tutoring chatbot — FastAPI backend with a vanilla JS frontend | `CSS` `HTML` `JavaScript` | 6 months ago |
-| **[hackathon-1](https://github.com/vanshrana21/hackathon-1)** | Full-stack hackathon build — vanilla JS frontend on a Python backend | `JavaScript` `HTML` `CSS` `Python` | 6 months ago |
-| **[Project-Friday](https://github.com/vanshrana21/Project-Friday)** | Project Friday — personal AI assistant experiment (TypeScript + Firebase, Python backend) | `TypeScript` `Python` `CSS` `JavaScript` `HTML` | 8 months ago |
+{{REPO_TABLE}}
 
 <sub>☝️ This table builds itself from the GitHub API every day — stars and dates are always current.</sub>
 
@@ -185,5 +176,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **7 Aug 2026 at 9:21 PM IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **{{UPDATED}}**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
