@@ -4,6 +4,10 @@
   (the workflow rebuilds it) or run locally:  bun scripts/build-readme.ts
 -->
 
+<p align="center">
+  <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+</p>
+
 ## Hi, I'm Vansh 👋
 
 `vanshrana21` · he/him · Mumbai, India

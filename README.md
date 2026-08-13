@@ -4,6 +4,10 @@
   (the workflow rebuilds it) or run locally:  bun scripts/build-readme.ts
 -->
 
+<p align="center">
+  <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+</p>
+
 ## Hi, I'm Vansh 👋
 
 `vanshrana21` · he/him · Mumbai, India
@@ -143,8 +147,8 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**620** contributions in the last year  
-📦 &nbsp;**610** commits · **1** PRs · **0** issues  
+🔥 &nbsp;**627** contributions in the last year  
+📦 &nbsp;**617** commits · **1** PRs · **0** issues  
 📁 &nbsp;**9** public repos · ⭐ **9** stars earned  
 👥 &nbsp;**4** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
@@ -188,5 +192,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **13 Aug 2026, 9:50 am IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **13 Aug 2026 at 7:53 PM IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
