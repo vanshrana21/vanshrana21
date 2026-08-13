@@ -4,8 +4,12 @@
   (the workflow rebuilds it) or run locally:  bun scripts/build-readme.ts
 -->
 
+<!-- wrapped in an anchor on purpose: GitHub auto-links any bare image to its
+     blob page, so clicking the banner would jump to the raw SVG file. -->
 <p align="center">
-  <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+  <a href="https://github.com/vanshrana21">
+    <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+  </a>
 </p>
 
 ## Hi, I'm Vansh 👋
@@ -147,8 +151,8 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**629** contributions in the last year  
-📦 &nbsp;**619** commits · **1** PRs · **0** issues  
+🔥 &nbsp;**630** contributions in the last year  
+📦 &nbsp;**620** commits · **1** PRs · **0** issues  
 📁 &nbsp;**9** public repos · ⭐ **9** stars earned  
 👥 &nbsp;**4** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
@@ -192,5 +196,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **13 Aug 2026 at 8:06 PM IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **13 Aug 2026 at 8:12 PM IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />

@@ -4,8 +4,12 @@
   (the workflow rebuilds it) or run locally:  bun scripts/build-readme.ts
 -->
 
+<!-- wrapped in an anchor on purpose: GitHub auto-links any bare image to its
+     blob page, so clicking the banner would jump to the raw SVG file. -->
 <p align="center">
-  <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+  <a href="https://github.com/vanshrana21">
+    <img src="assets/header.svg" alt="vanshrana21 — terminal banner" width="100%" />
+  </a>
 </p>
 
 ## Hi, I'm Vansh 👋
