@@ -141,17 +141,25 @@ function buildHeader(u: any, today: string): string {
 
   const modLines = modules
     .map(([name, frac, note], i) => {
-      const y = 322 + i * 30;
+      const y = 254 + i * 30;
       return `<text x="46" y="${y + 8}" font-family="${F}" font-size="13" fill="#c9b8f0">&gt; ${name}</text>
     ${bar(frac, 250, y)}
     <text x="418" y="${y + 8}" font-family="${F}" font-size="12" fill="#6f5f93">// ${note}</text>`;
     })
     .join("\n    ");
 
-  const artLines = ART.map(
-    (row, i) =>
-      `<text x="44" y="${132 + i * 30}" font-family="${F}" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve">${row}</text>`,
-  ).join("\n    ");
+  // Drawn as rects, not text: the █ glyph doesn't fill its cell in a
+  // monospace font, so text-rendered block art comes out as loose squares.
+  const CELL = 16;
+  const artLines = ART.flatMap((row, r) =>
+    [...row].map((ch, col) =>
+      ch === "█"
+        ? `<rect x="${44 + col * CELL}" y="${100 + r * CELL}" width="${CELL}" height="${CELL}" fill="url(#art)"/>`
+        : null,
+    ),
+  )
+    .filter(Boolean)
+    .join("\n    ");
 
   const diag: [string, string][] = [
     ["NODE", "vanshrana21"],
@@ -162,12 +170,12 @@ function buildHeader(u: any, today: string): string {
   const diagLines = diag
     .map(
       ([k, v], i) =>
-        `<text x="676" y="${152 + i * 24}" font-family="${F}" font-size="12" fill="#6f5f93">${k}:</text>
-    <text x="944" y="${152 + i * 24}" font-family="${F}" font-size="12" fill="#c9b8f0" text-anchor="end">${v}</text>`,
+        `<text x="676" y="${148 + i * 24}" font-family="${F}" font-size="12" fill="#6f5f93">${k}:</text>
+    <text x="944" y="${148 + i * 24}" font-family="${F}" font-size="12" fill="#c9b8f0" text-anchor="end">${v}</text>`,
     )
     .join("\n    ");
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Vansh Rana — terminal banner">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" role="img" aria-label="Vansh Rana — terminal banner">
   <defs>
     <linearGradient id="art" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#a855f7"/>
@@ -184,7 +192,7 @@ function buildHeader(u: any, today: string): string {
     </linearGradient>
   </defs>
 
-  <rect x="2" y="2" width="996" height="516" rx="14" fill="#0a0714" stroke="url(#edge)" stroke-width="2"/>
+  <rect x="2" y="2" width="996" height="456" rx="14" fill="#0a0714" stroke="url(#edge)" stroke-width="2"/>
   <rect x="2" y="2" width="996" height="38" rx="14" fill="#150e26"/>
   <rect x="2" y="26" width="996" height="14" fill="#150e26"/>
   <circle cx="28" cy="21" r="6" fill="#f87171"/>
@@ -196,19 +204,19 @@ function buildHeader(u: any, today: string): string {
 
   ${artLines}
 
-  <rect x="660" y="104" width="298" height="128" rx="8" fill="#120c20" stroke="#3b2a63" stroke-width="1.5"/>
-  <text x="676" y="128" font-family="${F}" font-size="12.5" fill="#c084fc">[SYSTEM DIAGNOSTICS]</text>
+  <rect x="660" y="100" width="298" height="120" rx="8" fill="#120c20" stroke="#3b2a63" stroke-width="1.5"/>
+  <text x="676" y="124" font-family="${F}" font-size="12.5" fill="#c084fc">[SYSTEM DIAGNOSTICS]</text>
   ${diagLines}
 
-  <text x="44" y="298" font-family="${F}" font-size="14" fill="#f472b6">&gt;_ core_modules_loaded</text>
+  <text x="44" y="230" font-family="${F}" font-size="14" fill="#f472b6">&gt;_ core_modules_loaded</text>
   ${modLines}
 
-  <text x="44" y="462" font-family="${F}" font-size="14" fill="#f472b6">&gt;_ connected_nodes</text>
-  <text x="46" y="486" font-family="${F}" font-size="12.5" fill="#c9b8f0">&gt; KAVACH   https://github.com/vanshrana21/kavach</text>
-  <text x="520" y="486" font-family="${F}" font-size="12.5" fill="#c9b8f0">&gt; LinkedIn  in/vansh-rana-bb29a0385</text>
+  <text x="44" y="392" font-family="${F}" font-size="14" fill="#f472b6">&gt;_ connected_nodes</text>
+  <text x="46" y="416" font-family="${F}" font-size="12.5" fill="#c9b8f0">&gt; KAVACH    github.com/vanshrana21/kavach</text>
+  <text x="520" y="416" font-family="${F}" font-size="12.5" fill="#c9b8f0">&gt; LinkedIn  in/vansh-rana-bb29a0385</text>
 
-  <text x="44" y="508" font-family="${F}" font-size="13" fill="#8b7bb8">vanshrana21@abyss:~$ ship --and --keep-shipping</text>
-  <rect x="392" y="498" width="8" height="13" fill="#c084fc">
+  <text x="44" y="444" font-family="${F}" font-size="13" fill="#8b7bb8">vanshrana21@abyss:~$ ship --and --keep-shipping</text>
+  <rect x="422" y="434" width="8" height="13" fill="#c084fc">
     <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
   </rect>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="Vansh Rana — terminal banner">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" role="img" aria-label="Vansh Rana — terminal banner">
   <defs>
     <linearGradient id="art" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#a855f7"/>
@@ -15,7 +15,7 @@
     </linearGradient>
   </defs>
 
-  <rect x="2" y="2" width="996" height="516" rx="14" fill="#0a0714" stroke="url(#edge)" stroke-width="2"/>
+  <rect x="2" y="2" width="996" height="456" rx="14" fill="#0a0714" stroke="url(#edge)" stroke-width="2"/>
   <rect x="2" y="2" width="996" height="38" rx="14" fill="#150e26"/>
   <rect x="2" y="26" width="996" height="14" fill="#150e26"/>
   <circle cx="28" cy="21" r="6" fill="#f87171"/>
@@ -25,47 +25,104 @@
 
   <text x="44" y="76" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#7dd3fc">&gt; Initializing ABYSS-OS v2.6 ...</text>
 
-  <text x="44" y="132" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve">█   █  ███  █   █  ████ █   █</text>
-    <text x="44" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve">█   █ █   █ ██  █ █     █   █</text>
-    <text x="44" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve">█   █ █████ █ █ █  ███  █████</text>
-    <text x="44" y="222" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve"> █ █  █   █ █  ██     █ █   █</text>
-    <text x="44" y="252" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="23" font-weight="bold" fill="url(#art)" xml:space="preserve">  █   █   █ █   █ ████  █   █</text>
+  <rect x="44" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="108" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="156" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="172" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="188" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="236" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="300" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="348" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="364" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="380" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="396" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="428" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="492" y="100" width="16" height="16" fill="url(#art)"/>
+    <rect x="44" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="108" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="140" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="204" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="236" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="252" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="300" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="332" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="428" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="492" y="116" width="16" height="16" fill="url(#art)"/>
+    <rect x="44" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="108" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="140" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="156" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="172" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="188" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="204" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="236" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="268" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="300" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="348" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="364" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="380" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="428" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="444" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="460" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="476" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="492" y="132" width="16" height="16" fill="url(#art)"/>
+    <rect x="60" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="92" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="140" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="204" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="236" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="284" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="300" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="396" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="428" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="492" y="148" width="16" height="16" fill="url(#art)"/>
+    <rect x="76" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="140" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="204" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="236" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="300" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="332" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="348" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="364" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="380" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="428" y="164" width="16" height="16" fill="url(#art)"/>
+    <rect x="492" y="164" width="16" height="16" fill="url(#art)"/>
 
-  <rect x="660" y="104" width="298" height="128" rx="8" fill="#120c20" stroke="#3b2a63" stroke-width="1.5"/>
-  <text x="676" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c084fc">[SYSTEM DIAGNOSTICS]</text>
-  <text x="676" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">NODE:</text>
-    <text x="944" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">vanshrana21</text>
-    <text x="676" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">ACTIVE MODULES:</text>
-    <text x="944" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">9</text>
-    <text x="676" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">CONTRIBUTIONS:</text>
-    <text x="944" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">627</text>
-    <text x="676" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">LAST SYNC:</text>
-    <text x="944" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">2026-08-13</text>
+  <rect x="660" y="100" width="298" height="120" rx="8" fill="#120c20" stroke="#3b2a63" stroke-width="1.5"/>
+  <text x="676" y="124" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c084fc">[SYSTEM DIAGNOSTICS]</text>
+  <text x="676" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">NODE:</text>
+    <text x="944" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">vanshrana21</text>
+    <text x="676" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">ACTIVE MODULES:</text>
+    <text x="944" y="172" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">9</text>
+    <text x="676" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">CONTRIBUTIONS:</text>
+    <text x="944" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">628</text>
+    <text x="676" y="220" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">LAST SYNC:</text>
+    <text x="944" y="220" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#c9b8f0" text-anchor="end">2026-08-13</text>
 
-  <text x="44" y="298" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f472b6">&gt;_ core_modules_loaded</text>
-  <text x="46" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Python / FastAPI</text>
-    <rect x="250" y="322" width="150" height="9" rx="2" fill="#241a3d"/>
-    <rect x="250" y="322" width="128" height="9" rx="2" fill="url(#bar)"/>
-    <text x="418" y="330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// Juris AI, KAVACH detection engine</text>
-    <text x="46" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; TypeScript / Bun</text>
-    <rect x="250" y="352" width="150" height="9" rx="2" fill="#241a3d"/>
-    <rect x="250" y="352" width="113" height="9" rx="2" fill="url(#bar)"/>
-    <text x="418" y="360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// ScopeGuard, tooling, this README</text>
-    <text x="46" y="390" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Luau / Roblox</text>
-    <rect x="250" y="382" width="150" height="9" rx="2" fill="#241a3d"/>
-    <rect x="250" y="382" width="120" height="9" rx="2" fill="url(#bar)"/>
-    <text x="418" y="390" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// Abyssal Dive — systems + progression</text>
-    <text x="46" y="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Security / Guardrails</text>
-    <rect x="250" y="412" width="150" height="9" rx="2" fill="#241a3d"/>
-    <rect x="250" y="412" width="105" height="9" rx="2" fill="url(#bar)"/>
-    <text x="418" y="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// prompt-injection defence, phishing</text>
+  <text x="44" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f472b6">&gt;_ core_modules_loaded</text>
+  <text x="46" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Python / FastAPI</text>
+    <rect x="250" y="254" width="150" height="9" rx="2" fill="#241a3d"/>
+    <rect x="250" y="254" width="128" height="9" rx="2" fill="url(#bar)"/>
+    <text x="418" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// Juris AI, KAVACH detection engine</text>
+    <text x="46" y="292" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; TypeScript / Bun</text>
+    <rect x="250" y="284" width="150" height="9" rx="2" fill="#241a3d"/>
+    <rect x="250" y="284" width="113" height="9" rx="2" fill="url(#bar)"/>
+    <text x="418" y="292" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// ScopeGuard, tooling, this README</text>
+    <text x="46" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Luau / Roblox</text>
+    <rect x="250" y="314" width="150" height="9" rx="2" fill="#241a3d"/>
+    <rect x="250" y="314" width="120" height="9" rx="2" fill="url(#bar)"/>
+    <text x="418" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// Abyssal Dive — systems + progression</text>
+    <text x="46" y="352" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#c9b8f0">&gt; Security / Guardrails</text>
+    <rect x="250" y="344" width="150" height="9" rx="2" fill="#241a3d"/>
+    <rect x="250" y="344" width="105" height="9" rx="2" fill="url(#bar)"/>
+    <text x="418" y="352" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6f5f93">// prompt-injection defence, phishing</text>
 
-  <text x="44" y="462" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f472b6">&gt;_ connected_nodes</text>
-  <text x="46" y="486" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c9b8f0">&gt; KAVACH   https://github.com/vanshrana21/kavach</text>
-  <text x="520" y="486" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c9b8f0">&gt; LinkedIn  in/vansh-rana-bb29a0385</text>
+  <text x="44" y="392" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#f472b6">&gt;_ connected_nodes</text>
+  <text x="46" y="416" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c9b8f0">&gt; KAVACH    github.com/vanshrana21/kavach</text>
+  <text x="520" y="416" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#c9b8f0">&gt; LinkedIn  in/vansh-rana-bb29a0385</text>
 
-  <text x="44" y="508" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b7bb8">vanshrana21@abyss:~$ ship --and --keep-shipping</text>
-  <rect x="392" y="498" width="8" height="13" fill="#c084fc">
+  <text x="44" y="444" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#8b7bb8">vanshrana21@abyss:~$ ship --and --keep-shipping</text>
+  <rect x="422" y="434" width="8" height="13" fill="#c084fc">
     <animate attributeName="opacity" values="1;1;0;0" dur="1.15s" repeatCount="indefinite"/>
   </rect>
 </svg>
