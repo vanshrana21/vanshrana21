@@ -20,32 +20,53 @@ const SY = 15;
 const SW = W - 30;
 const SH = H - 30;
 
+/**
+ * 7-row letterform grid. Taller than a 5-row font so the strokes have room
+ * to read as letters rather than as one chunky mass.
+ */
 const ART = [
   "█   █  ███  █   █  ████ █   █",
   "█   █ █   █ ██  █ █     █   █",
+  "█   █ █   █ ██  █ █     █   █",
   "█   █ █████ █ █ █  ███  █████",
+  "█   █ █   █ █  ██     █ █   █",
   " █ █  █   █ █  ██     █ █   █",
   "  █   █   █ █   █ ████  █   █",
 ];
 
-const CELL = 16;
+const COLS = 29;
+const ROWS = 7;
+const PITCH = 14; // cell-to-cell distance
+const DOT = 11; // drawn size — the 3px gap is what makes it read as a matrix
 const ART_X = 48;
-const ART_Y = 112;
+const ART_Y = 104;
 
 const CELLS: [number, number][] = ART.flatMap((row, r) =>
   [...row].flatMap((ch, col) =>
     ch === "█"
-      ? ([[ART_X + col * CELL, ART_Y + r * CELL]] as [number, number][])
+      ? ([[ART_X + col * PITCH, ART_Y + r * PITCH]] as [number, number][])
       : [],
   ),
 );
 
-/** One extrusion layer of the block art, offset diagonally. */
-function artLayer(dx: number, dy: number, fill: string): string {
-  const S = CELL + 0.6; // overlap kills antialiased seams between cells
+/** The unlit panel behind the letters — every cell of the matrix, dark. */
+function artPanel(): string {
+  const out: string[] = [];
+  for (let r = 0; r < ROWS; r++) {
+    for (let c = 0; c < COLS; c++) {
+      out.push(
+        `<rect x="${ART_X + c * PITCH}" y="${ART_Y + r * PITCH}" width="${DOT}" height="${DOT}" rx="1.5" fill="#5d4370" opacity="0.20"/>`,
+      );
+    }
+  }
+  return out.join("");
+}
+
+/** Lit cells, optionally offset to fake extrusion depth. */
+function artLayer(dx: number, dy: number, fill: string, opacity = 1): string {
   return CELLS.map(
     ([x, y]) =>
-      `<rect x="${x + dx}" y="${y + dy}" width="${S}" height="${S}" fill="${fill}" shape-rendering="crispEdges"/>`,
+      `<rect x="${x + dx}" y="${y + dy}" width="${DOT}" height="${DOT}" rx="1.5" fill="${fill}"${opacity !== 1 ? ` opacity="${opacity}"` : ""}/>`,
   ).join("");
 }
 
@@ -87,7 +108,7 @@ export function buildHeader(u: any, today: string): string {
       const fill = Math.round(BW * frac);
       return `<text x="50" y="${y + 8}" class="mono s13 fg">&gt; ${name}</text>
     <text x="244" y="${y + 8}" class="mono s13 dim">[</text>
-    <rect x="256" y="${y}" width="${BW}" height="9" rx="2" fill="#1b1033"/>
+    <rect x="256" y="${y}" width="${BW}" height="9" rx="2" fill="#251233"/>
     <rect x="256" y="${y}" width="${fill}" height="9" rx="2" fill="url(#bar)" class="barGlow">
       <animate attributeName="width" values="0;${fill}" keyTimes="0;1" calcMode="spline" keySplines="0.2 0.8 0.2 1" dur="1.5s" begin="0.3s" fill="freeze"/>
     </rect>
@@ -115,37 +136,29 @@ export function buildHeader(u: any, today: string): string {
     <style>
       .mono { font-family: ${F}; }
       .s12 { font-size: 12px } .s13 { font-size: 13px } .s14 { font-size: 14px }
-      .fg   { fill: #cbb9f2 }
-      .dim  { fill: #6f5f93 }
-      .cyan { fill: #67e8f9; text-shadow: 0 0 5px rgba(103,232,249,.8), 0 0 14px rgba(103,232,249,.35) }
-      .pink { fill: #f472b6; text-shadow: 0 0 5px rgba(244,114,182,.75), 0 0 16px rgba(244,114,182,.3) }
-      .lav  { fill: #c084fc; text-shadow: 0 0 5px rgba(192,132,252,.7) }
-      .barGlow { filter: drop-shadow(0 0 4px rgba(168,85,247,.75)) }
-      .artFace { filter: drop-shadow(0 0 12px rgba(168,85,247,.55)) drop-shadow(0 0 30px rgba(103,232,249,.22)) }
+      .fg   { fill: #eeddfc }
+      .dim  { fill: #5d4370 }
+      .cyan { fill: #00f0ff; text-shadow: 0 0 4px rgba(0,240,255,.6) }
+      .pink { fill: #ff66cc; text-shadow: 0 0 4px rgba(255,102,204,.55) }
+      .lav  { fill: #c084fc; text-shadow: 0 0 4px rgba(192,132,252,.55) }
+      .barGlow { filter: drop-shadow(0 0 3px rgba(192,132,252,.6)) }
+      .artFace { filter: drop-shadow(0 0 6px rgba(192,132,252,.45)) }
       @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
       .cursor { animation: blink 1.1s steps(1) infinite }
       @keyframes breathe { 0%,100% { opacity: .70 } 50% { opacity: 1 } }
       .breathe { animation: breathe 6s ease-in-out infinite }
     </style>
 
-    <!-- monitor housing: lit along the top, falling into shadow -->
+    <!-- monitor housing, matching the reference bezel ramp exactly -->
     <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3a1a55"/>
-      <stop offset="45%" stop-color="#1a0c2c"/>
-      <stop offset="100%" stop-color="#0a0413"/>
-    </linearGradient>
-
-    <!-- one ramp across the whole word; objectBoundingBox would repeat it per cell -->
-    <linearGradient id="art" gradientUnits="userSpaceOnUse"
-      x1="${ART_X}" y1="${ART_Y}" x2="${ART_X + 29 * CELL}" y2="${ART_Y + 5 * CELL}">
-      <stop offset="0%" stop-color="#f0d9ff"/>
-      <stop offset="42%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#67e8f9"/>
+      <stop offset="0%" stop-color="#2d153d"/>
+      <stop offset="50%" stop-color="#150820"/>
+      <stop offset="100%" stop-color="#09030d"/>
     </linearGradient>
 
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#e9d5ff"/>
+      <stop offset="0%" stop-color="#5d4370"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
     <radialGradient id="spot" cx="30%" cy="32%" r="55%">
@@ -181,25 +194,25 @@ export function buildHeader(u: any, today: string): string {
 
   <!-- housing -->
   <rect x="0" y="0" width="${W}" height="${H}" rx="18" fill="url(#bezel)"/>
-  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="18" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0.55"/>
-  <path d="M18 1 L${W - 18} 1" stroke="#e9d5ff" stroke-width="1" opacity="0.35"/>
+  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="18" fill="none" stroke="#522a6b" stroke-width="1.5" opacity="0.9"/>
+  <path d="M18 1 L${W - 18} 1" stroke="#c084fc" stroke-width="1" opacity="0.30"/>
 
   <!-- screen -->
-  <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" rx="10" fill="#08040f"/>
+  <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" rx="10" fill="#0b0512"/>
 
   <g clip-path="url(#screen)">
     <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" fill="url(#grid)"/>
     <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" fill="url(#spot)" class="breathe"/>
 
     <g>
-      ${wave(462, 15, 240, "#22d3ee", 9, 0.5)}
-      ${wave(472, 11, 190, "#c084fc", 7, 0.45)}
-      ${wave(454, 8, 300, "#f472b6", 13, 0.28)}
+      ${wave(462, 15, 240, "#00f0ff", 9, 0.42)}
+      ${wave(472, 11, 190, "#c084fc", 7, 0.40)}
+      ${wave(454, 8, 300, "#ff66cc", 13, 0.26)}
     </g>
 
     <!-- title bar -->
-    <rect x="${SX}" y="${SY}" width="${SW}" height="34" fill="#170e2a"/>
-    <line x1="${SX}" y1="${SY + 34}" x2="${SX + SW}" y2="${SY + 34}" stroke="#3b2a63" stroke-width="1"/>
+    <rect x="${SX}" y="${SY}" width="${SW}" height="34" fill="#150820"/>
+    <line x1="${SX}" y1="${SY + 34}" x2="${SX + SW}" y2="${SY + 34}" stroke="#311840" stroke-width="1"/>
     <circle cx="38" cy="32" r="5.5" fill="#f87171"/>
     <circle cx="58" cy="32" r="5.5" fill="#fbbf24"/>
     <circle cx="78" cy="32" r="5.5" fill="#34d399"/>
@@ -207,13 +220,13 @@ export function buildHeader(u: any, today: string): string {
 
     <text x="48" y="84" class="mono s14 cyan">&gt; Initializing VANSH-OS v2.6 ...</text>
 
-    <!-- extruded block art: shadow -> mid -> lit face -->
-    <g opacity="0.92">${artLayer(11, 11, "#170929")}</g>
-    <g opacity="0.96">${artLayer(7, 7, "#3b1a70")}</g>
-    <g>${artLayer(3, 3, "#6d28d9")}</g>
-    <g class="artFace">${artLayer(0, 0, "url(#art)")}</g>
+    <!-- LED matrix: unlit panel, then a short extrusion, then the lit face -->
+    ${artPanel()}
+    <g>${artLayer(4, 4, "#311840")}</g>
+    <g>${artLayer(2, 2, "#5d4370", 0.55)}</g>
+    <g class="artFace">${artLayer(0, 0, "#c084fc")}</g>
 
-    <rect x="656" y="108" width="308" height="126" rx="8" fill="#0d0719" fill-opacity="0.9" stroke="#5b3596" stroke-width="1.5"/>
+    <rect x="656" y="108" width="308" height="126" rx="8" fill="#0b0512" fill-opacity="0.92" stroke="#311840" stroke-width="1.5"/>
     <text x="672" y="134" class="mono s12 lav">[SYSTEM DIAGNOSTICS]</text>
     ${diagLines}
 
@@ -225,7 +238,7 @@ export function buildHeader(u: any, today: string): string {
     <text x="524" y="430" class="mono s13 fg">&gt; LinkedIn  in/vansh-rana-bb29a0385</text>
 
     <text x="48" y="504" class="mono s13 fg">vanshrana21@vansh:~$ ship --and --keep-shipping</text>
-    <rect x="434" y="494" width="8" height="13" fill="#e9d5ff" class="cursor barGlow"/>
+    <rect x="434" y="494" width="8" height="13" fill="#eeddfc" class="cursor barGlow"/>
 
     <!-- glass on top of everything -->
     <rect x="${SX}" y="${SY}" width="${SW}" height="${SH}" fill="url(#scan)"/>
