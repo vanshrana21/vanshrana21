@@ -151,8 +151,8 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**767** contributions in the last year  
-📦 &nbsp;**756** commits · **1** PRs · **0** issues  
+🔥 &nbsp;**774** contributions in the last year  
+📦 &nbsp;**763** commits · **1** PRs · **0** issues  
 📁 &nbsp;**10** public repos · ⭐ **9** stars earned  
 👥 &nbsp;**4** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
@@ -162,10 +162,10 @@ plumbing rather than intelligence.
 | Repo | What it is | Built with | Last pushed |
 |---|---|---|---|
 | **[daily-pulse](https://github.com/vanshrana21/daily-pulse)** | 📈 Self-updating daily snapshot of my public GitHub footprint — GitHub Action + GraphQL API, rewrites its own README | `TypeScript` | today |
-| **[claude-os-free](https://github.com/vanshrana21/claude-os-free)** | _no description yet_ | `TypeScript` `Python` `JavaScript` `CSS` `Shell` | 12 days ago |
-| **[AbyssalDive](https://github.com/vanshrana21/AbyssalDive)** ⭐ 1 | 🌊 Co-op extraction boss-battler on Roblox — descend through three ocean zones, fight what's down there, and surface with your haul. Script layer + rebuild scripts. | `Lua` `Luau` | 24 days ago |
-| **[kavach](https://github.com/vanshrana21/kavach)** ⭐ 1 | 🏆 TCS Tech Day winner — AI phishing detector that scans Gmail & WhatsApp live in your browser, with an on-device Privacy Shield mode | `HTML` `Python` `JavaScript` | 24 days ago |
-| **[Ieee](https://github.com/vanshrana21/Ieee)** ⭐ 2 | Juris AI — AI study platform for law students: courtroom simulation, answer-writing practice with automated scoring, and institution dashboards | `Python` `JavaScript` `CSS` `HTML` `Shell` | 24 days ago |
+| **[claude-os-free](https://github.com/vanshrana21/claude-os-free)** | _no description yet_ | `TypeScript` `Python` `JavaScript` `CSS` `Shell` | 13 days ago |
+| **[AbyssalDive](https://github.com/vanshrana21/AbyssalDive)** ⭐ 1 | 🌊 Co-op extraction boss-battler on Roblox — descend through three ocean zones, fight what's down there, and surface with your haul. Script layer + rebuild scripts. | `Lua` `Luau` | 25 days ago |
+| **[kavach](https://github.com/vanshrana21/kavach)** ⭐ 1 | 🏆 TCS Tech Day winner — AI phishing detector that scans Gmail & WhatsApp live in your browser, with an on-device Privacy Shield mode | `HTML` `Python` `JavaScript` | 25 days ago |
+| **[Ieee](https://github.com/vanshrana21/Ieee)** ⭐ 2 | Juris AI — AI study platform for law students: courtroom simulation, answer-writing practice with automated scoring, and institution dashboards | `Python` `JavaScript` `CSS` `HTML` `Shell` | 25 days ago |
 | **[Finguru](https://github.com/vanshrana21/Finguru)** ⭐ 1 | Finance-literacy tutoring chatbot — FastAPI backend with a vanilla JS frontend | `CSS` `HTML` `JavaScript` | 7 months ago |
 | **[hackathon-1](https://github.com/vanshrana21/hackathon-1)** ⭐ 1 | Full-stack hackathon build — vanilla JS frontend on a Python backend | `JavaScript` `HTML` `CSS` `Python` | 7 months ago |
 | **[Project-Friday](https://github.com/vanshrana21/Project-Friday)** ⭐ 1 | Project Friday — personal AI assistant experiment (TypeScript + Firebase, Python backend) | `TypeScript` `Python` `CSS` `JavaScript` `HTML` | 9 months ago |
@@ -197,5 +197,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **1 Sept 2026, 1:19 pm IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **2 Sept 2026, 12:36 pm IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
