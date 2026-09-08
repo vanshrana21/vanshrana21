@@ -151,9 +151,9 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**809** contributions in the last year  
-📦 &nbsp;**798** commits · **1** PRs · **0** issues  
-📁 &nbsp;**10** public repos · ⭐ **9** stars earned  
+🔥 &nbsp;**816** contributions in the last year  
+📦 &nbsp;**805** commits · **1** PRs · **0** issues  
+📁 &nbsp;**10** public repos · ⭐ **17** stars earned  
 👥 &nbsp;**4** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
 
@@ -161,14 +161,14 @@ plumbing rather than intelligence.
 
 | Repo | What it is | Built with | Last pushed |
 |---|---|---|---|
-| **[daily-pulse](https://github.com/vanshrana21/daily-pulse)** | 📈 Self-updating daily snapshot of my public GitHub footprint — GitHub Action + GraphQL API, rewrites its own README | `TypeScript` | today |
-| **[claude-os-free](https://github.com/vanshrana21/claude-os-free)** | _no description yet_ | `TypeScript` `Python` `JavaScript` `CSS` `Shell` | 18 days ago |
-| **[AbyssalDive](https://github.com/vanshrana21/AbyssalDive)** ⭐ 1 | 🌊 Co-op extraction boss-battler on Roblox — descend through three ocean zones, fight what's down there, and surface with your haul. Script layer + rebuild scripts. | `Lua` `Luau` | 1 month ago |
-| **[kavach](https://github.com/vanshrana21/kavach)** ⭐ 1 | 🏆 TCS Tech Day winner — AI phishing detector that scans Gmail & WhatsApp live in your browser, with an on-device Privacy Shield mode | `HTML` `Python` `JavaScript` | 1 month ago |
+| **[daily-pulse](https://github.com/vanshrana21/daily-pulse)** ⭐ 1 | 📈 Self-updating daily snapshot of my public GitHub footprint — GitHub Action + GraphQL API, rewrites its own README | `TypeScript` | today |
+| **[claude-os-free](https://github.com/vanshrana21/claude-os-free)** ⭐ 1 | _no description yet_ | `TypeScript` `Python` `JavaScript` `CSS` `Shell` | 19 days ago |
+| **[AbyssalDive](https://github.com/vanshrana21/AbyssalDive)** ⭐ 2 | 🌊 Co-op extraction boss-battler on Roblox — descend through three ocean zones, fight what's down there, and surface with your haul. Script layer + rebuild scripts. | `Lua` `Luau` | 1 month ago |
+| **[kavach](https://github.com/vanshrana21/kavach)** ⭐ 2 | 🏆 TCS Tech Day winner — AI phishing detector that scans Gmail & WhatsApp live in your browser, with an on-device Privacy Shield mode | `HTML` `Python` `JavaScript` | 1 month ago |
 | **[Ieee](https://github.com/vanshrana21/Ieee)** ⭐ 2 | Juris AI — AI study platform for law students: courtroom simulation, answer-writing practice with automated scoring, and institution dashboards | `Python` `JavaScript` `CSS` `HTML` `Shell` | 1 month ago |
-| **[Finguru](https://github.com/vanshrana21/Finguru)** ⭐ 1 | Finance-literacy tutoring chatbot — FastAPI backend with a vanilla JS frontend | `CSS` `HTML` `JavaScript` | 7 months ago |
+| **[Finguru](https://github.com/vanshrana21/Finguru)** ⭐ 2 | Finance-literacy tutoring chatbot — FastAPI backend with a vanilla JS frontend | `CSS` `HTML` `JavaScript` | 7 months ago |
 | **[hackathon-1](https://github.com/vanshrana21/hackathon-1)** ⭐ 1 | Full-stack hackathon build — vanilla JS frontend on a Python backend | `JavaScript` `HTML` `CSS` `Python` | 7 months ago |
-| **[Project-Friday](https://github.com/vanshrana21/Project-Friday)** ⭐ 1 | Project Friday — personal AI assistant experiment (TypeScript + Firebase, Python backend) | `TypeScript` `Python` `CSS` `JavaScript` `HTML` | 9 months ago |
+| **[Project-Friday](https://github.com/vanshrana21/Project-Friday)** ⭐ 2 | Project Friday — personal AI assistant experiment (TypeScript + Firebase, Python backend) | `TypeScript` `Python` `CSS` `JavaScript` `HTML` | 9 months ago |
 
 <sub>☝️ This table builds itself from the GitHub API every day — stars and dates are always current.</sub>
 
@@ -197,5 +197,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **7 Sept 2026, 12:49 pm IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **8 Sept 2026, 12:44 pm IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
