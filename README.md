@@ -151,8 +151,8 @@ plumbing rather than intelligence.
 
 ## 📊 My GitHub, live
 
-🔥 &nbsp;**1,307** contributions in the last year  
-📦 &nbsp;**1,294** commits · **1** PRs · **0** issues  
+🔥 &nbsp;**1,314** contributions in the last year  
+📦 &nbsp;**1,301** commits · **1** PRs · **0** issues  
 📁 &nbsp;**12** public repos · ⭐ **19** stars earned  
 👥 &nbsp;**5** followers · **2** following  
 🗓️ &nbsp;On GitHub since **May 2025**
@@ -161,8 +161,8 @@ plumbing rather than intelligence.
 
 | Repo | What it is | Built with | Last pushed |
 |---|---|---|---|
-| **[daily-pulse](https://github.com/vanshrana21/daily-pulse)** ⭐ 1 | 📈 Self-updating daily snapshot of my public GitHub footprint — GitHub Action + GraphQL API, rewrites its own README | `TypeScript` | today |
-| **[student-attendance-management-system](https://github.com/vanshrana21/student-attendance-management-system)** | _no description yet_ | `Python` `JavaScript` `HTML` | 15 days ago |
+| **[daily-pulse](https://github.com/vanshrana21/daily-pulse)** ⭐ 1 | 📈 Self-updating daily snapshot of my public GitHub footprint — GitHub Action + GraphQL API, rewrites its own README | — | today |
+| **[student-attendance-management-system](https://github.com/vanshrana21/student-attendance-management-system)** | _no description yet_ | `Python` `JavaScript` `HTML` | 16 days ago |
 | **[bakufu](https://github.com/vanshrana21/bakufu)** ⭐ 1 | BAKUFU: mineral intelligence prototype for SIH26009 (MOIL manganese Ghost Reserves). Next.js frontend + FastAPI backend. | `Jupyter Notebook` `Python` `TypeScript` `CSS` `Shell` | 1 month ago |
 | **[claude-os-free](https://github.com/vanshrana21/claude-os-free)** ⭐ 1 | _no description yet_ | `TypeScript` `Python` `JavaScript` `CSS` `Shell` | 2 months ago |
 | **[AbyssalDive](https://github.com/vanshrana21/AbyssalDive)** ⭐ 2 | 🌊 Co-op extraction boss-battler on Roblox — descend through three ocean zones, fight what's down there, and surface with your haul. Script layer + rebuild scripts. | `Lua` `Luau` | 2 months ago |
@@ -199,5 +199,5 @@ clients** — which is where I learned that "just export it as PNG" is never the
 
 ---
 
-<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **4 Nov 2026, 2:41 pm IST**</sub>
+<sub>🤖 This README rebuilds itself daily from the GitHub API — last updated **5 Nov 2026, 2:59 pm IST**</sub>
 <img align="right" src="https://komarev.com/ghpvc/?username=vanshrana21&style=flat-square&color=8E2DE2&label=Profile+views" />
